@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+.app,html{
+  background-color: #4f4f4f;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
+  .form-img{
+    width: 100%;
+    height: 100%;
+  }
+  .bg-container{
+     width: 70%;
+     height: 70%;
+     position: relative;
+     left: 15%;
+     margin: 60px 0 60px;    
+     border-radius: 10px; 
+     display: flex;
+     justify-content:center ;
+  }
+  .img-container{
+width: 50%;
+border-radius: 6px;
+overflow: hidden;
+border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+  }
+  .form-group{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .form-container h4{
+    margin: 20px 0 50px;
+  }
+  #hackerspaces-2df641a1-5a50-4621-b3d9-a0cff3798695{
+    border: #dadce0 solid 1px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: white;
+  }
+/*===================================== navbar =================================*/
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  background-color: white;
+  box-shadow: 0px 3px 5px 0px rgba(207,207,207,0.75);
+-webkit-box-shadow: 0px 3px 5px 0px rgba(207,207,207,0.75);
+-moz-box-shadow: 0px 3px 5px 0px rgba(207,207,207,0.75);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.main-header{
+  display:flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 90px;
 }
-
-.App-link {
-  color: #61dafb;
+.main-menu{
+  width: 600px;
+  height: 33px;
+  margin-top: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-gmc img{
+  width: 150px;
+  height: 90px;
+  cursor: pointer;
+}
+.main-menu ul{
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  font-weight: 700;
+  font-size: 12px;
+  font-family:"Google Sans","Roboto",Arial,sans-serif;
+  color: #2e2e30;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+.dropdown-list ol{
+  padding: 20px 0;
+  position: absolute;
+  background-color: white;
+  list-style: none;
+  visibility: hidden;
+}
+.main-menu li:hover ol{
+  visibility: visible;
+  color: #2e2e30;
+}
+.dropdown-list ol li:hover{
+  background-color: #f6f8f8;
+}
+.main-menu li:hover,.main-menu a:hover{
+  color:#cc0808 ;
+  cursor: pointer;
+}
+.dropdown-list li{
+  padding: 10px 15px;
+}
+button{
+  border: none;
+  background-color: white;
+  color: #cc0808;
+  padding: 12px 24px 11px;
+  border-radius: 4px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.sign-btn{
+  border: 1px solid #dadce0;
+}
+.sign-btn:hover{
+  background-color: #dce0e0;
+  color:#2e2e30 ;
+  border-color:#2e2e30;
+}
+a{
+  text-decoration: none;
+  color: #2e2e30;
 }
